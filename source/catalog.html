@@ -10,8 +10,8 @@
 <body>
 <header class="header">
   <a class="header__logo logo" href="#">
-    <img class="header-icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энержи».">
-    <img class="header-text" src="images/logo-sigh.svg" width="101" height="18" alt="Логотип с буквами Кэт энержи».">
+    <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энержи».">
+    <img class="Logo__text" src="images/logo-sigh.svg" width="101" height="18" alt="Логотип с буквами Кэт энержи».">
   </a>
   <nav class="header-nav">
     <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -25,17 +25,16 @@
     </ul>
   </nav>
 </header>
-
 <main class="main">
   <h1 class="main__title main__title--catalog">Каталог продукции</h1>
   <section class="catalog">
     <h2 class="visually-hidden">Список продукции</h2>
     <article class="catalog__item card">
-      <a class="card__link" href="#">
+      <a class="card__link card__link--image" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
-      <a class="card__link" href="#">
+      <a class="card__link card__link--title" href="#">
         <h3 class="card__title">Cat Energy PRO 500 г</h3>
       </a>
       <ul class="card__list">
@@ -65,15 +64,15 @@
       <ul class="card__list">
         <li class="card__item">
           <span class="card__info">Масса</span>
-          <span class="card__info">1000 г</span>
+          <span class="card__value">1000 г</span>
         </li>
         <li>
           <span class="card__info">Вкус</span>
-          <span class="card__info">Курица</span>
+          <span class="card__value">Курица</span>
         </li>
         <li>
           <span class="card__info">Цена</span>
-          <span class="card__info">1000 ₽</span>
+          <span class="card__value">1000 ₽</span>
         </li>
       </ul>
       <a class="card__button button" href="#">Заказать</a>
@@ -89,15 +88,15 @@
       <ul class="card__list">
         <li class="card__item">
           <span class="card__info">Масса</span>
-          <span class="card__info">1000 г</span>
+          <span class="card__value">1000 г</span>
         </li>
         <li>
           <span class="card__info">Вкус</span>
-          <span class="card__info">Курица</span>
+          <span class="card__value">Курица</span>
         </li>
         <li>
           <span class="card__info">Цена</span>
-          <span class="card__info">1000 ₽</span>
+          <span class="card__value">1000 ₽</span>
         </li>
       </ul>
       <a class="card__button button" href="#">Заказать</a>
@@ -113,15 +112,15 @@
       <ul class="card__list">
         <li class="card__item">
           <span class="card__info">Масса</span>
-          <span class="card__info">1000 г</span>
+          <span class="card__value">1000 г</span>
         </li>
         <li>
           <span class="card__info">Вкус</span>
-          <span class="card__info">Курица</span>
+          <span class="card__value">Курица</span>
         </li>
         <li>
           <span class="card__info">Цена</span>
-          <span class="card__info">1000 ₽</span>
+          <span class="card__value">1000 ₽</span>
         </li>
       </ul>
       <a class="card__button button" href="#">Заказать</a>
@@ -137,15 +136,15 @@
       <ul class="card__list">
         <li class="card__item">
           <span class="card__info">Масса</span>
-          <span class="card__info">1000 г</span>
+          <span class="card__value">1000 г</span>
         </li>
         <li>
           <span class="card__info">Вкус</span>
-          <span class="card__info">Курица</span>
+          <span class="card__value">Курица</span>
         </li>
         <li>
           <span class="card__info">Цена</span>
-          <span class="card__info">1000 ₽</span>
+          <span class="card__value">1000 ₽</span>
         </li>
       </ul>
       <a class="card__button button" href="#">Заказать</a>
@@ -161,15 +160,15 @@
       <ul class="card__list">
         <li class="card__item">
           <span class="card__info">Масса</span>
-          <span class="card__info">1000 г</span>
+          <span class="card__value">1000 г</span>
         </li>
         <li>
           <span class="card__info">Вкус</span>
-          <span class="card__info">Курица</span>
+          <span class="card__value">Курица</span>
         </li>
         <li>
           <span class="card__info">Цена</span>
-          <span class="card__info">1000 ₽</span>
+          <span class="card__value">1000 ₽</span>
         </li>
       </ul>
       <a class="card__button button" href="#">Заказать</a>
@@ -185,24 +184,24 @@
       <ul class="card__list">
         <li class="card__item">
           <span class="card__info">Масса</span>
-          <span class="card__info">1000 г</span>
+          <span class="card__value">1000 г</span>
         </li>
         <li>
           <span class="card__info">Вкус</span>
-          <span class="card__info">Курица</span>
+          <span class="card__value">Курица</span>
         </li>
         <li>
           <span class="card__info">Цена</span>
-          <span class="card__info">1000 ₽</span>
+          <span class="card__value">1000 ₽</span>
         </li>
       </ul>
       <a class="card__button button" href="#">Заказать</a>
     </article>
-    <div class="catalog__item show-more">
+    <article class="catalog__item show-more">
       <p class="show-more__lead">Показать еще 100500 товаров</p>
       <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
       <a class="show-more__button button" href="#">Показать все</a>
-    </div>
+    </article>
   </section>
   <section class="additional">
     <h2 class="additional__title">Дополнительные товары</h2>
@@ -249,18 +248,20 @@
   </section>
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-    <p class="contacts__address">
-      <span>ул. Большая </span>
-      <span>Конюшенная, д. 19/8 </span>
-      <span>Санкт-Петербург</span></p>
+    <div class="contacts__wrapper">
+      <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">
+        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 </span>
+        <span class="contacts__text">Санкт-Петербург</span>
+      </p>
+    </div>
     <img class="contacts__map" src="images/contacts-map.png" width="320" height="362" alt="Карта как нас найти">
   </section>
 
 </main>
 <footer class="footer">
-  <a class="footer__logo logo" href="#">
-    <img class="logo__image" src="images/logo-sigh.svg" width="128" height="24" alt="Логотип с буквами Кэт энержи">
+  <a class="footer__logo footer-logo" href="#">
+    <img class="footer-logo__image" src="images/logo-sigh.svg" width="128" height="24" alt="Логотип с буквами Кэт энержи">
   </a>
   <ul class="footer__list social">
     <li class="social__item">
