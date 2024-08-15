@@ -10,8 +10,16 @@
 <body>
 <header class="header">
   <a class="header__logo logo" href="#">
-    <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энержи».">
-    <img class="Logo__text" src="images/logo-sigh.svg" width="101" height="18" alt="Логотип с буквами Кэт энержи».">
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/svg/logo-desktop.svg" width="70" height="59">
+      <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50">
+      <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энержи.">
+    </picture>
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1200px)" srcset="images/svg/logo-text-desktop.svg" width="118" height="21">
+      <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/svg/logo-text-tablet.svg" width="101" height="18">
+      <img class="logo__image logo__image--text" src="images/svg/logo-text.svg" width="101" height="18" alt="Логотип с буквами Кэт энержи.">
+    </picture>
   </a>
   <nav class="header-nav">
     <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -32,7 +40,7 @@
     <article class="catalog__item card">
       <a class="card__link card__link--image" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link card__link--title" href="#">
         <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -56,7 +64,7 @@
     <article class="catalog__item card">
       <a class="card__link" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link" href="#">
         <h3 class="card__title">Cat Energy PRO 1000 г</h3>
@@ -80,7 +88,7 @@
     <article class="catalog__item card">
       <a class="card__link" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link" href="#">
         <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -104,7 +112,7 @@
     <article class="catalog__item card">
       <a class="card__link" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link" href="#">
         <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -128,7 +136,7 @@
     <article class="catalog__item card">
       <a class="card__link" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link" href="#">
         <h3 class="card__title--lead">Cat Energy PRO 500 г</h3>
@@ -152,7 +160,7 @@
     <article class="catalog__item card">
       <a class="card__link" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link" href="#">
         <h3 class="card__title--lead">Cat Energy PRO 500 г</h3>
@@ -176,7 +184,7 @@
     <article class="catalog__item card">
       <a class="card__link" href="#">
         <img class="card__img" src="images/catalog-chicken-500.jpg" width="68" height="87"
-             alt="Cat Energy PRO 500 г со вкусом курицы">
+              alt="Cat Energy PRO 500 г со вкусом курицы">
       </a>
       <a class="card__link" href="#">
         <h3 class="card__title">Cat Energy PRO 500 г</h3>
@@ -242,7 +250,7 @@
     <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
       <label class="visually-hidden" for="subscribe-input">Укажите ваш e-mail:</label>
       <input class="subscribe__input" type="email" name="subscribe-input" id="subscribe-input"
-             placeholder="кuklachev@gmail.com" required>
+              placeholder="кuklachev@gmail.com" required>
       <button class="subscribe__button button" type="submit">Подписаться</button>
     </form>
   </section>
@@ -251,17 +259,24 @@
     <div class="contacts__wrapper">
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__address">
-        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 </span>
+        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
         <span class="contacts__text">Санкт-Петербург</span>
       </p>
     </div>
-    <img class="contacts__map" src="images/contacts-map.png" width="320" height="362" alt="Карта как нас найти">
+    <picture>
+    <source type="image/png" media="(min-width: 1200px)" srcset="images/index/location-desktop@1x.png 1x,
+      images/index/location-desktop@2x.png 2x" width="1440" height="400">
+    <source type="image/png" media="(min-width: 768px)" srcset="images/index/location-tablet@1x.png 1x,
+      images/index/location-tablet@2x.png 2x" width="768" height="400">
+    <img class="contacts__map" src="images/index/location-mobile@1x.png" srcset="images/index/location-mobile@2x.png 2x"
+         width="320" height="362" alt="Карта как нас найти">
+  </picture>
   </section>
 
 </main>
 <footer class="footer">
   <a class="footer__logo footer-logo" href="#">
-    <img class="footer-logo__image" src="images/logo-sigh.svg" width="128" height="24" alt="Логотип с буквами Кэт энержи">
+    <img class="footer-logo__image" src="images/svg/logo-text.svg" width="128" height="24" alt="Логотип с буквами Кэт энержи">
   </a>
   <ul class="footer__list social">
     <li class="social__item">
