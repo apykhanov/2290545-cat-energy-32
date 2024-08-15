@@ -4,14 +4,28 @@
   <meta charset="UTF-8">
   <title>Кэт энержи: функциональное питание для котов</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
+
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="body">
 <header class="header header--main">
-  <a class="header__logo logo" href="#">
-    <img class="logo__icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энержи.">
-    <img class="logo__text" src="images/logo-sigh.svg" width="101" height="18" alt="Логотип с буквами Кэт энержи.">
+  <a class="header__logo logo" href="index.html">
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg" width="70" height="59">
+      <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50">
+      <img class="logo__image logo__image--icon" src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энержи.">
+    </picture>
+    <picture>
+      <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/svg/logo-text-desktop.svg" width="118" height="21">
+      <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/svg/logo-text-tablet.svg" width="101" height="18">
+      <img class="logo__image logo__image--text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Логотип с буквами Кэт энержи.">
+    </picture>
   </a>
   <nav class="header-nav">
     <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -28,23 +42,30 @@
 
 <main class="main">
   <section class="promo">
-    <h1 class="promo__title">Функциональное <br>питание для котов</h1>
+    <h1 class="promo__title">Функциональное питание для котов</h1>
     <p class="promo__description">Занялся собой? Займись котом!</p>
-    <img class="promo__img" src="images/index-can-mobile.png" width="280" height="270" alt="Банка корма">
+    <picture>
+      <source type="image/png" media="(min-width: 1440px)" srcset="images/index/index-can-desktop@1x.png 1x,
+      images/index/index-can-desktop@2x.png 2x" width="552" height="499">
+      <source type="image/png" media="(min-width: 768px)" srcset="images/index/index-can-tablet@1x.png 1x,
+      images/index/index-can-tablet@2x.png 2x" width="709" height="609">
+    <img class="promo__img" src="images/index/index-can-mobile@1x.png"
+         srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка корма">
+    </picture>
     <a class="promo__button button" href="#">Подобрать программу</a>
   </section>
   <section class="program">
     <h2 class="visually-hidden">Разделы каталога</h2>
     <article class="program__item program__item--slim">
       <h3 class="program__title">похудение</h3>
-      <p class="program__description">Ваш кот весит больше собаки и <br>почти утратил способность лазить<br>
-        по деревьям? Пора на диету! Cat <br>Energy Slim поможет вашему<br>питомцу сбросить лишний вес.</p>
+      <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить
+        по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
       <a class="program__link" href="#">Каталог Slim</a>
     </article>
     <article class="program__item program__item--pro">
       <h3 class="program__title">набор массы</h3>
-      <p class="program__description">Заработать авторитет среди<br>дворовых котов и даже собак? <br>Серия Cat Energy
-        Pro поможет<br>вашему коту нарастить<br>необходимые мышцы.</p>
+      <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+        Pro поможет вашему коту нарастить необходимые мышцы.</p>
       <a class="program__link" href="#">Каталог Pro</a>
     </article>
   </section>
@@ -79,28 +100,44 @@
       </li>
     </ul>
     <p class="example__spending">Затраты на питание: 15000 руб.</p>
-    <img class="example__image example__image--before" src="images/fat-cat-mobile-1x.png" width="280" height="256"
-         alt="Толстый котик">
-    <button class="example__button button" type="submit"></button>
-    <img class="example__image example__image--after" src="images/slim-cat-mobile-1x.png" width="280" height="256"
-         alt="Худой котик">
+    <picture>
+      <source type="image/png" media="(min-width: 768px)" srcset="images/index/fat-cat@1x.png 1x,
+      images/index/fat-cat@2x.png 2x" width="560" height="512">
+    <img class="example__image example__image--before" src="images/index/fat-cat-mobile@1x.png"
+         srcset="images/index/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый котик">
+    </picture>
+    <button class="example__button button" type="button"></button>
+    <picture>
+      <source type="image/png" media="(min-width: 768px)" srcset="images/index/slim-cat@1x.png 1x,
+      images/index/slim-cat@2x.png 2x" width="560" height="512">
+    <img class="example__image example__image--after" src="images/index/slim-cat-mobile@1x.png"
+         srcset="images/index/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой котик">
+    </picture>
   </section>
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <div class="contacts__wrapper">
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__address">
-        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 </span>
+        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
         <span class="contacts__text">Санкт-Петербург</span>
       </p>
     </div>
-    <img class="contacts__map" src="images/contacts-map.png" width="320" height="362" alt="Карта как нас найти">
+    <picture>
+      <source type="image/png" media="(min-width: 1440px)" srcset="images/index/location-desktop@1x.png 1x,
+      images/index/location-desktop@2x.png 2x" width="1440" height="400">
+      <source type="image/png" media="(min-width: 768px)" srcset="images/index/location-tablet@1x.png 1x,
+      images/index/location-tablet@2x.png 2x" width="768" height="400">
+    <img class="contacts__map" src="images/index/location-mobile@1x.png" srcset="images/index/location-mobile@2x.png 2x"
+         width="320" height="362" alt="Карта как нас найти">
+    </picture>
   </section>
 </main>
 
 <footer class="footer">
   <a class="footer__logo footer-logo" href="#">
-    <img class="footer-logo__image" src="images/logo-sigh.svg" width="128" height="24" alt="Логотип с буквами Кэт энержи">
+    <img class="footer-logo__image" src="images/svg/footer-logo.svg" width="128" height="24"
+         alt="Логотип с буквами Кэт энержи">
   </a>
   <ul class="footer__list social">
     <li class="social__item">
@@ -121,7 +158,7 @@
   </ul>
   <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
     <span class="copyright__title">HTML Academy</span>
-    <img class="copyright__image" src="images/copyright-image-mobile.svg" width="27" height="34" alt="логотип академии">
+    <img class="copyright__image" src="images/svg/logo-academy.svg" width="27" height="34" alt="логотип академии">
   </a>
 </footer>
 </body>
