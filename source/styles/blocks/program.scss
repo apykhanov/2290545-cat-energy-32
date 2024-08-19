@@ -1,0 +1,49 @@
+.program {
+
+}
+
+.program__item {
+  background-color: $secondary-bg-color;
+
+}
+
+.program__item--pro {
+
+
+}
+
+.program__item--slim {
+
+
+
+}
+
+.program__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-color-text-black;
+
+
+
+}
+
+.program__description {
+  color: $primary-color-text;
+
+
+}
+
+.program__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-color-text-black;
+
+}
