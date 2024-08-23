@@ -19,31 +19,31 @@
 }
 
 .program__title {
-  font-family: $second-font;
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $text-black;
+  color: $secondary-color-text-black;
 
 
 
 }
 
 .program__description {
-  color: $main-text;
+  color: $primary-color-text;
 
 
 }
 
 .program__link {
-  font-family: $second-font;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  color: $text-black;
+  color: $secondary-color-text-black;
 
 }

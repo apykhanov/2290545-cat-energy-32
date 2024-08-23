@@ -1,16 +1,9 @@
 .show-more {
-  &::before {
-    @include pseudo(30px, 30px);
-    background-image: url("../../icons/catalog/show-more-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  }
 
 }
 
 .show-more__title {
-  font-family: $second-font;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -24,7 +17,7 @@
 }
 
 .show-more__button {
-  color: $main-text;
+  color: $primary-color-text;
   background-color: $secondary-bg-color;
 
 }
