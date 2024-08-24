@@ -3,7 +3,7 @@
 }
 
 .card-row__title {
-  font-family: $secondary-font;
+  font-family: $second-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -14,7 +14,7 @@
 .card-row__description {
   text-align: center;
   line-height: 20px;
-  color: $primary-color-text
+  color: $main-text
 
 
 }
@@ -22,6 +22,6 @@
 .card-row__price {
   text-align: center;
   line-height: 20px;
-  color: $primary-color-text
+  color: $main-text
 
 }

@@ -1,14 +1,14 @@
 .example {
-  background-color: $secondary-bg-color;
+  background-color: #eaeaea;
 
 }
 
 .example__title {
-  font-family: $secondary-font;
+  font-family: $second-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  color: $secondary-color-text-black;
+  color: $text-black;
 }
 
 .example__description {
@@ -24,26 +24,26 @@
 }
 
 .example__value {
-  font-family: $secondary-font;
+  font-family: $second-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: $secondary-color-text-black;
+  color: $text-black;
 }
 
 .example__value-desc {
-  color: $primary-color-text;
+  color: $main-text;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
 }
 
 .example__spending {
-  font-family: $secondary-font;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: $secondary-color-text-black;
+  color: $text-black;
   text-align: center;
   text-transform: uppercase;
 
