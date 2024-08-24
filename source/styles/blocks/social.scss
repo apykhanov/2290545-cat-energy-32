@@ -1,19 +1,63 @@
+.social {
+
+}
+
 .social__item {
+  list-style: none;
 
 }
 
 .social__link {
+  &--vk {
+    &::after {
+      @include pseudo(28px, 22px);
+      mask-image: url("../../icons/footer/vk-icon.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 100%;
+      background-color: $social-icon-color;
+    }
+  }
 
+  &--ut {
+    &::after {
+      @include pseudo(28px, 22px);
+      mask-image: url("../../icons/footer/ut-icon.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 100%;
+      background-color: $social-icon-color;
+      right: 50%;
+    }
+  }
+
+  &--tg {
+    &::after {
+      @include pseudo(28px, 22px);
+      mask-image: url("../../icons/footer/tg-icon.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 100%;
+      background-color: $social-icon-color;
+      left: 70px;
+    }
+  }
+
+  &--vk:hover::after,
+  &--ut:hover::after,
+  &--tg:hover::after,
+  &--vk:focus::after,
+  &--ut:focus::after,
+  &--tg:focus::after {
+    background-color: $basic-bg-green;
+  }
+
+  &--vk:active::after,
+  &--ut:active::after,
+  &--tg:active::after {
+    background-color: $basic-bg-green;
+    opacity: 0.3;
+  }
 }
 
-.social__link--tg {
 
-}
-
-.social__link--ut {
-
-}
-
-.social__link--vk {
-
-}

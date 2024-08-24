@@ -1,4 +1,6 @@
 .special {
+  position: relative;
+  list-style: none;
 
 }
 
@@ -18,24 +20,102 @@
 
 .special__item {
   color: $main-text;
+  list-style: none;
 
 }
 
 .special__item--leaf {
+  &::before {
+    @include pseudo (30px, 32px);
+    background-image: url("../../icons/index/leaf-icon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    z-index: 2;
+    top: 35px;
+    left: 35px;
+  }
+
+  &::after {
+    @include pseudo (60px, 60px);
+    background-color: $basic-bg-green;
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    left: 20px;
+  }
 
 }
 
 .special__item--powder {
 
+  &::before {
+    @include pseudo (26px, 29px);
+    background-image: url("../../icons/index/powder-icon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    z-index: 2;
+    top: 128px;
+    left: 35px;
+  }
+
+  &::after {
+    @include pseudo (60px, 60px);
+    background-color: $basic-bg-green;
+    position: absolute;
+    z-index: 1;
+    top: 118px;
+    left: 20px;
+  }
+
 }
 
 .special__item--eat {
+  &::before {
+    @include pseudo (25px, 30px);
+    background-image: url("../../icons/index/eat-icon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    left: 35px;
+  }
+
+  &::after {
+    @include pseudo (60px, 60px);
+    background-color: $basic-bg-green;
+    position: absolute;
+    z-index: 1;
+    top: 210px;
+    left: 20px;
+  }
 
 
 }
 
 
 .special__item--time {
+  &::before {
+    @include pseudo (26px, 31px);
+    background-image: url("../../icons/index/time-icon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    z-index: 2;
+    top: 284px;
+    left: 35px;
+  }
+
+  &::after {
+    @include pseudo (60px, 60px);
+    background-color: $basic-bg-green;
+    position: absolute;
+    z-index: 1;
+    top: 275px;
+    left: 20px;
+  }
 
 
 }
