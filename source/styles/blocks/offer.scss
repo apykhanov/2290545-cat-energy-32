@@ -1,10 +1,39 @@
 .offer {
   background-color: $basic-bg-green;
+  min-width: 280px;
+  min-height: 290px;
+  position: relative;
+  background-image: url("../../images/catalog/catalog-offer-bg-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+
+  &::before {
+    @include pseudo(78px, 80px);
+    background-image: url("../../icons/catalog/gift-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 3;
+  }
+
+  &::after {
+    @include pseudo (100%, 100%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
 }
 
 .offer__title {
   font-size: 16px;
   line-height: 20px;
-  color: $secondary-color-text-white
+  color: $text-white
 
 }

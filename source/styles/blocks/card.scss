@@ -11,18 +11,18 @@
 }
 
 .card__title {
-  font-family: $secondary-font;
+  font-family: $second-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $secondary-color-text-black;
+  color: $text-black;
 }
 
 .card__item {
-  font-family: $primary-font;
+  font-family: $main-font;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  color: $primary-color-text;
+  color: $main-text;
 }
 
