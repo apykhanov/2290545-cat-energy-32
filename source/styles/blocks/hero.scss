@@ -1,16 +1,15 @@
-.hero {
+.hero .wrapper {
+  @include flex();
   font-family: $second-font;
   color: $text-white;
   background-color: $basic-bg-green;
-
-
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 700;
-  text-align: center;
+  font-weight: 400;
+
 }
 
 .hero__description {
@@ -25,6 +24,7 @@
 }
 
 .hero__button {
+
 
 }
 
