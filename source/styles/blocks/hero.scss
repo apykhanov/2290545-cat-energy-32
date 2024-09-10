@@ -1,8 +1,24 @@
-.hero .wrapper {
+.hero {
   @include flex();
   font-family: $second-font;
   color: $text-white;
   background-color: $basic-bg-green;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $text-black;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $text-black;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .hero__title {
@@ -10,21 +26,54 @@
   line-height: 36px;
   font-weight: 400;
 
+  @media (min-width: $tablet-width) {
+    color: $text-black;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $text-black;
+    max-width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero__description {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero__img {
-
-
+  display: block;
+  margin: 0 auto;
 }
 
 .hero__button {
+  width: 100%;
+  padding: 10px 64px;
 
-
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 26px;
+  }
 }
+
 

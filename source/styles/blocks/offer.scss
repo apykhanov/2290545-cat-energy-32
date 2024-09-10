@@ -1,4 +1,5 @@
 .offer {
+  @include flex(column, flex-end, center);
   background-color: $basic-bg-green;
   min-width: 280px;
   min-height: 290px;
