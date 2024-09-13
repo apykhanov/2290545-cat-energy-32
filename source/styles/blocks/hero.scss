@@ -2,23 +2,11 @@
   @include flex();
   font-family: $second-font;
   color: $text-white;
-  background-color: $basic-bg-green;
+  background-image: linear-gradient(to bottom, $basic-bg-green 60%, #ffffff 40%);
   text-align: center;
+  padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
-    color: $text-black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: start;
-  }
 
-  @media (min-width: $desktop-width) {
-    color: $text-black;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 }
 
 .hero__title {
@@ -26,20 +14,7 @@
   line-height: 36px;
   font-weight: 400;
 
-  @media (min-width: $tablet-width) {
-    color: $text-black;
-    margin-bottom: 40px;
-    align-self: flex-start;
-    font-size: 60px;
-    line-height: 60px;
-  }
 
-  @media (min-width: $desktop-width) {
-    color: $text-black;
-    max-width: 414px;
-    font-size: 60px;
-    line-height: 60px;
-  }
 }
 
 .hero__description {
@@ -67,8 +42,7 @@
 }
 
 .hero__button {
-  width: 100%;
-  padding: 10px 64px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
