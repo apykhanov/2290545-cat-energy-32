@@ -1,8 +1,27 @@
 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0 25px;
+
 
 }
 
+.card__list {
+  @include flex (column,flex-start);
+  margin-bottom: 7px;
+  list-style: none;
+}
+
 .card__link {
+
+
+
+}
+
+.card__link--title {
+
+
+
 
 }
 
@@ -11,11 +30,13 @@
 }
 
 .card__title {
+  padding: 0 50px 15px 0;
   font-family: $second-font;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: $text-black;
+  text-transform: uppercase;
 }
 
 .card__item {

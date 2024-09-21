@@ -1,5 +1,41 @@
-.header-nav__toggle {
+.header-nav {
+  font-family: $second-font;
+  width: 100%;
+  position: relative;
 
+  @media (min-width: $tablet-width) {
+    @include flex (column,flex-end,center);
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+}
+
+
+.header-nav__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  top: -30px;
+  right: 3px;
+  z-index: 2;
+  cursor: pointer;
+  display: block;
+
+
+
+}
+
+.site-list__item {
+  list-style: none;
 }
 
 

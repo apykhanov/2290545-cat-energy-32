@@ -1,17 +1,60 @@
 .program {
+  @include flex(column);
+  padding: 0 20px;
+  margin-bottom: 19px;
+  width: 100%;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin-bottom: 71px;
+  }
 }
 
 .program__item {
   background-color: $second-bg-color;
   position: relative;
-  width: 100%;
+  min-height: 266px;
 
-}
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    min-height: 372px;
+  }
 
-.program__item--pro {
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    min-height: 374px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .program__item--pro {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 71px;
+    }
+  }
+
   &::before {
-    @include pseudo (67px, 28px);
+    @include pseudo(67px, 28px);
     background-image: url("../../icons/index/cat-pro-icon-mobile.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -20,8 +63,9 @@
     top: 35px;
     left: 12px;
   }
+
   &::after {
-    @include pseudo (50px, 50px);
+    @include pseudo(50px, 50px);
     background-color: $basic-bg-green;
     border-radius: 50%;
     position: absolute;
@@ -31,12 +75,23 @@
   }
 
 
-
 }
 
 .program__item--slim {
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding: 77px 150px 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 192px 0 214px;
+    margin-bottom: 73px;
+  }
+
   &::before {
-    @include pseudo (36px, 50px);
+    @include pseudo(36px, 50px);
     background-image: url("../../icons/index/cat-slim-icon-mobile.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -47,7 +102,7 @@
   }
 
   &::after {
-    @include pseudo (50px, 50px);
+    @include pseudo(50px, 50px);
     background-color: $basic-bg-green;
     border-radius: 50%;
     position: absolute;
@@ -55,7 +110,6 @@
     top: 24px;
     left: 20px;
   }
-
 
 
 }
@@ -68,13 +122,66 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-black;
+  margin-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
 
-
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
+
+.program__title--slim {
+  padding: 30px 80px 0 90px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding: 77px 150px 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 192px 0 214px;
+    margin-bottom: 73px;
+  }
+}
+
+.program__title--pro {
+  padding: 30px 52px 0 91px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 240px 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 150px 0 214px;
+    margin-bottom: 73px;
+  }
+}
+
 
 .program__description {
   color: $main-text;
+  margin-bottom: 38px;
+  padding: 0 33px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 48%;
+    margin-bottom: 48px;
+    padding: 0;
+    padding-left: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 0 56px 0 52px;
+    margin-bottom: 23px;
+  }
 
 
 }
@@ -86,11 +193,26 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
   color: $text-black;
+  max-width: 134px;
+  margin-bottom: 22px;
+  padding-left: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 165px;
+    padding-left: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::after {
-    @include pseudo (32px, 10px);
+    @include pseudo(24px, 12px);
     mask-image: url("../../icons/index/arrow-icon.svg");
     mask-repeat: no-repeat;
     mask-size: 100%;
@@ -101,11 +223,28 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    outline: none;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform-origin: left;
+    transform: scale(1.5, 1);
+    transition: transform 0.3s ease-in-out;
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
   }
 
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus,
+  &.disabled:active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
+
 

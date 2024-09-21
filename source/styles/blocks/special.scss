@@ -1,4 +1,7 @@
 .special {
+  @include flex(column, space-between, flex-start);
+  margin-bottom: 49px;
+  padding: 0 20px;
   position: relative;
   list-style: none;
 
@@ -10,10 +13,29 @@
   line-height: 40px;
   font-weight: 400;
   color: $text-black;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .special__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 
 
 }
@@ -21,6 +43,24 @@
 .special__item {
   color: $main-text;
   list-style: none;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flex (column, flex-end, center);
+
+    &:not(:last-child) {
+      margin-bottom: 37px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(n) {
+      margin-bottom: 0;
+    }
+  }
 
 }
 
@@ -68,6 +108,7 @@
     top: 118px;
     left: 20px;
   }
+
 
 }
 

@@ -1,9 +1,22 @@
 .site-list {
+  display: none;
+
+
+
+  @media (min-width: $tablet-width) {
+    @include flex();
+
+
+
+  }
 
 
 }
 
 .site-list__item {
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+  padding: 22px 0;
 
 
 }
@@ -14,5 +27,6 @@
 }
 
 .site-list__link {
+
 
 }

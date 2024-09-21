@@ -1,14 +1,38 @@
 .header {
+  @include flex();
+  width: 100%;
+  min-height: 65px;
   font-family: $second-font;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $text-black;
+  padding: 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    min-height: 59px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
+
 .header--main {
 
-
 }
+
+
+.header__logo {
+  @include flex();
+  width: 192px;
+  gap: 56px;
+}
+
 
 
 
