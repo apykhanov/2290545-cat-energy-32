@@ -2,9 +2,15 @@
   @include flex();
   font-family: $second-font;
   color: $text-white;
-  background-image: linear-gradient(to bottom, $basic-bg-green 60%, #ffffff 40%);
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, #ffffff 40%),
+  url("../../images/index/index-background-cat-desktop@2x.png");
   text-align: center;
   padding: 0 20px;
+  margin-bottom: 20px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+
 
 
 }
@@ -13,8 +19,6 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-
-
 }
 
 .hero__description {
@@ -22,6 +26,7 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -37,12 +42,11 @@
 }
 
 .hero__img {
-  display: block;
   margin: 0 auto;
 }
 
 .hero__button {
-  margin-bottom: 20px;
+
 
   @media (min-width: $tablet-width) {
     width: 244px;

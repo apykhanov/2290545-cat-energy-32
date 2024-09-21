@@ -1,5 +1,6 @@
 .example {
-  padding-left: 20px;
+  @include flex;
+  padding: 25px 20px 40px;
   background-color: #eaeaea;
 
 }
@@ -11,30 +12,15 @@
   line-height: 40px;
   font-weight: 400;
   color: $text-black;
+  align-self: flex-start;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
-    font-size: 60px;
-    line-height: 60px;
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
-    font-size: 60px;
-    line-height: 60px;
-  }
 }
 
 .example__description {
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
-  }
 
 }
 
@@ -43,27 +29,16 @@
   column-gap: 32px;
   margin-bottom: 34px;
 
-  @media (min-width: $tablet-width) {
-    @include flex();
-    width: 367px;
-    margin-bottom: 50px;
-    column-gap: 43px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
-  }
 
 }
 
 .example__item {
-  @include flex(column, space-between, center);
+  @include flex(column);
   min-width: 124px;
+  padding-top: 13px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
 
-  @media (min-width: $tablet-width) {
-    @include flex(column, space-between, center);
-    width: 162px;
-  }
 
 }
 
@@ -74,6 +49,7 @@
   font-weight: 400;
   color: $text-black;
   text-transform: uppercase;
+  padding-bottom: 16px;
 }
 
 .example__value-desc {
@@ -83,20 +59,10 @@
   font-weight: 400;
   background-color: #eaeaea;
   text-align: center;
+  padding: 0 15px;
+  position: absolute;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 5px;
-    font-size: 14px;
-    line-height: 14px;
-    background-color: $main-bg-color;
 
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
-    font-size: 14px;
-    line-height: 14px;
-  }
 }
 
 .example__spending {
@@ -108,19 +74,6 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    font-size: 20px;
-    line-height: 20px;
-    align-self: flex-end;
-    text-align: end;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
-    align-self: flex-start;
-  }
 
 
 }
@@ -132,5 +85,9 @@
 
 .example__image--after {
 
+
+}
+
+.example__button {
 
 }
